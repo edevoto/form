@@ -14,6 +14,7 @@
 <body>
     <div class="container-fluid p-5">
         <div class="card border-lightmb-3">
+            <form action="" id="myForm">
             <div class="card-header bg-light border-light">
                 <h1>Payment form example</h1>
             </div>
@@ -70,7 +71,7 @@
                     </div>
                 </div>
                 <div class="row mb-2 align-items-center">
-                    <div class="col-2 d-flex flex-column align-items-start">
+                    <div class="col-6 col-md-2 d-flex flex-column align-items-start">
 
                         <label for="payments"><strong class="text-dark"> We accept:</strong></label>
                         <div class="container mt-1 p-2 rounded bg-secondary d-flex align-items-center">
@@ -104,10 +105,10 @@
                         </div>
                     </div>
 
-                    <div class="col-9 d-flex justify-content-end">
+                    <div class="col-6 col-md-10 d-flex justify-content-end">
                         <div class="form-area">
                             <label for="comment"><strong class="text-dark"> Comments</strong class="text-dark"></label>
-                            <textarea class="form-control" name="comment" id="comment" cols="50" rows="5"></textarea>
+                            <textarea class="form-control" name="comment" id="comment" cols="100" rows="5"></textarea>
                         </div>
                     </div>
                 </div>
@@ -115,20 +116,24 @@
             <div class="card-footer bg-light border-light">
                 <div class="row mb-2">
                     <div class="container-fluid d-flex justify-content-end">
-                        <button type="button" class="btn btn-secondary btn-sm">Cancel</button>
-                        <button type="button" class="btn btn-primary btn-md ms-2">Send</button>
+                        <button type="submit" class="btn btn-secondary btn-sm">Cancel</button>
+                        <button type="submit" class="btn btn-primary btn-md ms-2">Send</button>
                     </div>
                 </div>
             </div>
         </div>
+    
+    
     </div>
-    </div>
+</form>    
+</div>
     </div>
 
-
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
         </script>
+   
 </body>
 
 </html>
