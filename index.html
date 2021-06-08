@@ -14,27 +14,29 @@
 <body>
     <div class="container-fluid p-5">
         <div class="card border-lightmb-3">
+           
+           
             <form action="" id="myForm">
             <div class="card-header bg-light border-light">
                 <h1>Payment form example</h1>
             </div>
             <div class="card-body text-secondary">
-                <div class="alert alert-danger" role="alert">
-                    Some fields are missing
+                <div class="alert alert-danger" id="alerts" role="alert">
+                 
                 </div>
                 <div class="row mb-2">
                     <div class="col-5">
                         <label for="card"><strong class="text-dark">Card#</strong></label>
-                        <input type="text" name="card" class="form-control" placeh>
+                        <input type="text" name="card" id="card" class="form-control" placeh>
                     </div>
                     <div class="col-3">
                         <label for="cvc"><strong class="text-dark">CVC#</strong></label>
-                        <input type="text" name="cvc" class="form-control">
+                        <input type="text" name="cvc" id="cvc" class="form-control">
                     </div>
                     <div class="col-4">
                         <label for="amount"><strong class="text-dark">Amount</strong></label>
                         <div class="d-flex align-items-center">
-                            <strong>$</strong><input type="text" name="amount" class="form-control">
+                            <strong>$</strong><input type="text" id="amount" name="amount" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -42,11 +44,11 @@
                 <div class="row mb-2">
                     <div class="col-6">
                         <label for="firstName"><strong class="text-dark">First Name</strong></label>
-                        <input type="text" name="firstName" class="form-control">
+                        <input type="text" name="firstName" id="firstName" class="form-control">
                     </div>
                     <div class="col-6">
                         <label for="lastName"><strong class="text-dark">Last Name</strong></label>
-                        <input type="text" name="lastName" class="form-control">
+                        <input type="text" name="lastName" id="lastName" class="form-control">
                     </div>
                 </div>
 
@@ -54,11 +56,11 @@
                 <div class="row mb-2">
                     <div class="col-6">
                         <label for="city"><strong class="text-dark">City</strong></label>
-                        <input type="text" name="city" class="form-control">
+                        <input type="text" name="city" id="city" class="form-control">
                     </div>
                     <div class="col-3">
                         <label for="select"><strong class="text-dark">State</strong></label>
-                        <select class="form-select" name="select" aria-label="Default select example">
+                        <select class="form-select" id="state" name="select" aria-label="Default select example">
                             <option selected>Open this select menu</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
@@ -67,7 +69,7 @@
                     </div>
                     <div class="col-3">
                         <label for="postalCode"><strong class="text-dark">Postal Code</strong></label>
-                        <input type="text" name="postalCode" class="form-control">
+                        <input type="text" id="postalCode" name="postalCode" class="form-control">
                     </div>
                 </div>
                 <div class="row mb-2 align-items-center">
@@ -126,6 +128,12 @@
     
     </div>
 </form>    
+
+
+
+
+
+
 </div>
     </div>
 
